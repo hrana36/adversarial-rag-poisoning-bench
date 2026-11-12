@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adversarial-rag-poisoning-bench"
+version = "1.0.0"
+description = "Adversarial Corpus Poisoning and Robust Retrieval Evaluation Benchmark for Retrieval-Augmented Generation (RAG)"
+authors = [{ name = "Md Habibur Rahaman Rana", email = "hrana36@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn>=1.3.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]

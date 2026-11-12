@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "clean_corpus_size": 30,
+    "poisoned_documents_injected": 10,
+    "evaluation_queries_count": 10,
+    "top_k": 5
+  },
+  "clean_baseline": {
+    "hit_rate_at_5": 1.0,
+    "mrr_at_5": 0.8,
+    "attack_success_rate": 0.0
+  },
+  "poisoned_unprotected": {
+    "hit_rate_at_5": 0.9,
+    "mrr_at_5": 0.35,
+    "attack_success_rate": 1.0,
+    "mean_poison_rank": 1.0
+  },
+  "defended_robust_rag": {
+    "hit_rate_at_5": 0.9,
+    "mrr_at_5": 0.6167,
+    "attack_success_rate": 0.0
+  }
+}
